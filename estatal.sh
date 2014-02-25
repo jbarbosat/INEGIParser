@@ -7,7 +7,8 @@
 
 echo "Descargando informacion de INEGI..."
 DATOSDIR=$(dirname $0)/datos
-BASEPATH="http://www3.inegi.org.mx/sistemas/descarga/descargaArchivo.aspx?file=Por+entidad+federativa"
+# BASEPATH="http://www3.inegi.org.mx/sistemas/descarga/descargaArchivo.aspx?file=Por+entidad+federativa"
+BASEPATH="http://www3.inegi.org.mx/sistemas/descarga/default.aspx?c=28088"
 
 mkdir -p $DATOSDIR
 cd $DATOSDIR

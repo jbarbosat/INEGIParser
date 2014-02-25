@@ -1,13 +1,21 @@
 INEGI Parser
 ============
 
-Script de Python que toma los archivos TSV de INEGI para todas las Entidades
+Esto está basado en el trabajo de @rafaelcr (Rafael Cardenas).
+Es un script de Python que toma los archivos TSV de INEGI para todas las Entidades
 Federativas de México, los parsea y los transmite hacia una base de datos
 MongoDB (noSQL) o PostgreSQL (SQL).  
 Los archivos son tomados de la sección de 
 [Descarga Masiva](http://www3.inegi.org.mx/sistemas/descarga/default.aspx?c=28088) 
-de la INEGI por un shell script que los descarga y descomprime 
+de INEGI por un shell script que los descarga y descomprime 
 automáticamente.  
+
+Cambios
+-------
+
+A diferencia de cuando esto fue creado, ya no podemos descargar los archivos con
+CURL porque ahora hace jquery's. No tengo idea de cómo armar jqueries. O aprendo este rollo 
+o uso Selenium con Chrome.
 
 Dependencias
 ------------
